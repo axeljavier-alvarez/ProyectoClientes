@@ -5,8 +5,13 @@ const axios = require('axios');
 const router = express.Router();
 
 // Configuración de la API REST .NET 10
-const api = axios.create({
+/* const api = axios.create({
     baseURL: 'http://localhost:5238/api/Clientes',
+    timeout: 10000
+}); */
+
+const api = axios.create({
+    baseURL: process.env.API_URL || 'http://localhost:5238/api/Clientes',
     timeout: 10000
 });
 
