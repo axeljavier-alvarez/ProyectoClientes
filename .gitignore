@@ -1,0 +1,23 @@
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# .NET
+**/bin/
+**/obj/
+.vs/
+
+# Configuraciones locales
+.env
+.env.*
+**/appsettings.Development.json
+**/launchSettings.json
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Visual Studio
+*.user
+*.suo
